@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.Serialization", "core\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0832A32F-01E6-4716-92E8-D4234A4356B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dime.Serialization.Tests", "..\Dime.Serialization.Tests\Dime.Serialization.Tests.csproj", "{A4C7C2E4-8222-432A-A4DA-31A24D89B6CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dime.Serialization.Tests", "test\Dime.Serialization.Tests.csproj", "{A4C7C2E4-8222-432A-A4DA-31A24D89B6CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
