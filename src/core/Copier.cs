@@ -37,11 +37,8 @@ namespace Dime.Utilities
         /// <param name="settings">The serialization settings</param>
         /// <returns>The copied object.</returns>
         public static T DeepClone<T>(this T source, JsonSerializerSettings settings)
-        {
-            // Don't serialize a null object, simply return the default for that object
-            return ReferenceEquals(source, null) 
-                ? default(T) 
+            => ReferenceEquals(source, null)  // Don't serialize a null object, simply return the default for that objects
+                ? default
                 : JsonConvert.DeserializeObject<T>(JsonConvert.SerializeObject(source, settings), settings);
-        }
     }
 }
