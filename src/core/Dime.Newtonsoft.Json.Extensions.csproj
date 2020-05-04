@@ -21,7 +21,7 @@
     <IncludeSymbols>True</IncludeSymbols>
     <Copyright>Copyright © 2020</Copyright>
     <PackageProjectUrl>http://www.dimenics.com/products/dime-scheduler/</PackageProjectUrl>
-    <RepositoryUrl>https://dimenicsbe.visualstudio.com/DefaultCollection/Dime.Scheduler V2</RepositoryUrl>
+    <RepositoryUrl>https://github.com/dimenics/dime-newtonsoft-json-extensions</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <NeutralLanguage>en</NeutralLanguage>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
