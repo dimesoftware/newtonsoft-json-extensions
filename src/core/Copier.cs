@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-
-namespace Dime.Utilities
+﻿namespace Newtonsoft.Json.Extensions
 {
     /// <summary>
     /// Reference Article http://www.codeproject.com/KB/tips/SerializedObjectCloner.aspx
@@ -10,7 +8,7 @@ namespace Dime.Utilities
     public static class Copier
     {
         /// <summary>
-        /// Perform a deep copy of the object, using JSON as a serialisation method.
+        /// Perform a deep copy of the object, using JSON as a serialization method.
         /// </summary>
         /// <typeparam name="T">The type of object being copied.</typeparam>
         /// <param name="source">The object instance to copy.</param>
@@ -18,7 +16,7 @@ namespace Dime.Utilities
         public static T DeepClone<T>(this T source)
         {
             // Initialize inner objects individually
-            // For example in default constructor some list property initialized with some values, 
+            // For example in default constructor some list property initialized with some values,
             // but in 'source' these items are cleaned - without ObjectCreationHandling.Replace default constructor values will be added to result
             JsonSerializerSettings deserializeSettings = new JsonSerializerSettings
             {
@@ -30,15 +28,13 @@ namespace Dime.Utilities
         }
 
         /// <summary>
-        /// Perform a deep copy of the object, using JSON as a serialisation method.
+        /// Perform a deep copy of the object, using JSON as a serialization method.
         /// </summary>
         /// <typeparam name="T">The type of object being copied.</typeparam>
         /// <param name="source">The object instance to copy.</param>
         /// <param name="settings">The serialization settings</param>
         /// <returns>The copied object.</returns>
         public static T DeepClone<T>(this T source, JsonSerializerSettings settings)
-            => ReferenceEquals(source, null)  // Don't serialize a null object, simply return the default for that objects
-                ? default
-                : JsonConvert.DeserializeObject<T>(JsonConvert.SerializeObject(source, settings), settings);
+            => source == null ? default : JsonConvert.DeserializeObject<T>(JsonConvert.SerializeObject(source, settings), settings);
     }
 }

@@ -1,20 +1,46 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Dime.Newtonsoft.Json.Extensions
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+This is a simple utility library that uses the capabilities of Newtonsoft.Json.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Getting Started
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+- You must have Visual Studio 2019 Community or higher.
+- The dotnet cli is also highly recommended.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://www.visualstudio.com/en-us/docs/git/create-a-readme). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+## About this project
+
+This is a simple utility library that uses the capabilities of Newtonsoft.Json. Particularly, the `Copier` class exposes a `DeepClone` method which allows to do perform deep cloning.
+
+## Build and Test
+
+- Run dotnet restore
+- Run dotnet build
+- Run dotnet test
+
+## Installation
+
+Use the package manager NuGet to install Dime.Rules:
+
+- dotnet cli: `dotnet add package Dime.Newtonsoft.Json.Extensions`
+- Package manager: `Install-Package Dime.Newtonsoft.Json.Extensions`
+
+## Usage
+
+``` csharp
+    using Newtonsoft.Json.Extensions;
+    
+    public bool Copy(Customer originalCustomer)
+    {
+        Customer copiedCustomer = originalCustomer.DeepClone();
+        return copiedCustomer == originalCustomer; // returns false
+    }
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Please make sure to update tests as appropriate.
+
+## License
+
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)

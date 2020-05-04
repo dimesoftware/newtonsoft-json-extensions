@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Description>Serialization utilities</Description>
+    <Description>Extensions to the Newtonsoft.Json package</Description>
     <Authors>Dimenics</Authors>
     <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
     <AssemblyName>Dime.Utilities.Serialization</AssemblyName>
@@ -19,19 +19,21 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <IncludeSource>True</IncludeSource>
     <IncludeSymbols>True</IncludeSymbols>
-    <Copyright>Copyright © 2017</Copyright>
+    <Copyright>Copyright © 2020</Copyright>
     <PackageProjectUrl>http://www.dimenics.com/products/dime-scheduler/</PackageProjectUrl>
     <RepositoryUrl>https://dimenicsbe.visualstudio.com/DefaultCollection/Dime.Scheduler V2</RepositoryUrl>
-    <RepositoryType>Visual Studio Team Services</RepositoryType>
+    <RepositoryType>git</RepositoryType>
     <NeutralLanguage>en</NeutralLanguage>
-    <AssemblyVersion>1.0.0.2</AssemblyVersion>
-    <FileVersion>1.0.0.2</FileVersion>
-    <Version>1.0.0.2</Version>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <Version>1.0.1.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageTags>Newtonsoft;JsonSerializer</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="System.Reflection" Version="4.3.0" />
   </ItemGroup>
 

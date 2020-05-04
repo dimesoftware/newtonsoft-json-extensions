@@ -2,7 +2,7 @@
 using System.Runtime.Serialization;
 using Newtonsoft.Json;
 
-namespace Dime.Serialization.Tests
+namespace Newtonsoft.Json.Extensions.Tests
 {
     [DataContract]
     internal class Customer

@@ -1,4 +1,4 @@
-﻿namespace Dime.Serialization.Tests
+﻿namespace Newtonsoft.Json.Extensions.Tests
 {
     internal class Article
     {
