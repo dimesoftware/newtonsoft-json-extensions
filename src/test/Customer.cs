@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 namespace Newtonsoft.Json.Extensions.Tests
 {
     [DataContract]
-    internal class Customer
+    public class Customer
     {
         [DataMember]
         public int Id { get; set; }
