@@ -36,13 +36,13 @@ Use the package manager NuGet to install Dime.Rules:
 ## Usage
 
 ```csharp
-    using Newtonsoft.Json.Extensions;
+using Newtonsoft.Json.Extensions;
 
-    public bool Copy(Customer originalCustomer)
-    {
-        Customer copiedCustomer = originalCustomer.DeepClone();
-        return copiedCustomer == originalCustomer; // returns false
-    }
+public bool Copy(Customer originalCustomer)
+{
+    Customer copiedCustomer = originalCustomer.DeepClone();
+    return copiedCustomer == originalCustomer; // returns false
+}
 ```
 
 ## Contributing
