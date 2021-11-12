@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![Build status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.dime-newtonsoft-json-extensions?branchName=master) ![Package](https://feeds.dev.azure.com/dimenicsbe/_apis/public/Packaging/Feeds/a7b896fd-9cd8-4291-afe1-f223483d87f0/Packages/dfedbfcf-d4c8-46b7-b091-db5ef6245565/Badge)
+![Build status](https://dev.azure.com/dimesoftware/Utilities/_apis/build/status/dimenics.dime-newtonsoft-json-extensions?branchName=master) ![Package](https://feeds.dev.azure.com/dimesoftware/_apis/public/Packaging/Feeds/a7b896fd-9cd8-4291-afe1-f223483d87f0/Packages/dfedbfcf-d4c8-46b7-b091-db5ef6245565/Badge)
 <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square" />
 <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" />
 </div>
